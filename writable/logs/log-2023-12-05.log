@@ -1,0 +1,853 @@
+ERROR - 2023-12-05 03:23:18 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it.
+ in E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\Database\MySQLi\Connection.php:185
+Stack trace:
+#0 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\Database\MySQLi\Connection.php(185): mysqli->real_connect('localhost', 'root', '', 'codegnitore_pro...', 3306, '', 0)
+#1 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\app\Controllers\ProductController.php(21): CodeIgniter\BaseModel->findAll()
+#7 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\CodeIgniter.php(942): App\Controllers\ProductController->index()
+#8 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+#9 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\Commands\Server\rewrite.php(47): require_once('E:\\xamp\\htdocs\\...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it.
+ in E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#4 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#5 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\app\Controllers\ProductController.php(21): CodeIgniter\BaseModel->findAll()
+#6 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\CodeIgniter.php(942): App\Controllers\ProductController->index()
+#7 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+#8 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\Commands\Server\rewrite.php(47): require_once('E:\\xamp\\htdocs\\...')
+#11 {main}
+CRITICAL - 2023-12-05 03:23:18 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it.
+
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `products`', [], false)
+ 3 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\ProductController.php(21): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ProductController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xamp\\htdocs\\wdpf55_codegitore\\CI_PROJECT1\\public\\index.php')
+ERROR - 2023-12-05 03:25:11 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it.
+ in E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\Database\MySQLi\Connection.php:185
+Stack trace:
+#0 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\Database\MySQLi\Connection.php(185): mysqli->real_connect('localhost', 'root', '', 'codegnitore_pro...', 3306, '', 0)
+#1 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\app\Controllers\ProductController.php(21): CodeIgniter\BaseModel->findAll()
+#7 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\CodeIgniter.php(942): App\Controllers\ProductController->index()
+#8 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+#9 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\Commands\Server\rewrite.php(47): require_once('E:\\xamp\\htdocs\\...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it.
+ in E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#4 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#5 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\app\Controllers\ProductController.php(21): CodeIgniter\BaseModel->findAll()
+#6 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\CodeIgniter.php(942): App\Controllers\ProductController->index()
+#7 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+#8 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\Commands\Server\rewrite.php(47): require_once('E:\\xamp\\htdocs\\...')
+#11 {main}
+ERROR - 2023-12-05 03:25:13 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it.
+ in E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\Database\MySQLi\Connection.php:185
+Stack trace:
+#0 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\Database\MySQLi\Connection.php(185): mysqli->real_connect('localhost', 'root', '', 'codegnitore_pro...', 3306, '', 0)
+#1 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\Database\BaseConnection.php(690): CodeIgniter\Database\BaseConnection->initialize()
+#3 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#4 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#5 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#6 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#7 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\app\Controllers\ProductController.php(21): CodeIgniter\BaseModel->findAll()
+#8 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\CodeIgniter.php(942): App\Controllers\ProductController->index()
+#9 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+#10 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\Commands\Server\rewrite.php(47): require_once('E:\\xamp\\htdocs\\...')
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it.
+ in E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\Database\BaseConnection.php(690): CodeIgniter\Database\BaseConnection->initialize()
+#2 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\app\Controllers\ProductController.php(21): CodeIgniter\BaseModel->findAll()
+#7 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\CodeIgniter.php(942): App\Controllers\ProductController->index()
+#8 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+#9 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\Commands\Server\rewrite.php(47): require_once('E:\\xamp\\htdocs\\...')
+#12 {main}
+CRITICAL - 2023-12-05 03:25:13 --> Call to a member function more_results() on bool
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 298.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `products`')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `products`')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `products`', [], false)
+ 4 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Controllers\ProductController.php(21): CodeIgniter\BaseModel->findAll()
+ 7 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ProductController->index()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xamp\\htdocs\\wdpf55_codegitore\\CI_PROJECT1\\public\\index.php')
+ERROR - 2023-12-05 03:25:16 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it.
+ in E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\Database\MySQLi\Connection.php:185
+Stack trace:
+#0 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\Database\MySQLi\Connection.php(185): mysqli->real_connect('localhost', 'root', '', 'codegnitore_pro...', 3306, '', 0)
+#1 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\app\Controllers\ProductController.php(21): CodeIgniter\BaseModel->findAll()
+#7 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\CodeIgniter.php(942): App\Controllers\ProductController->index()
+#8 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+#9 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\Commands\Server\rewrite.php(47): require_once('E:\\xamp\\htdocs\\...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it.
+ in E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#4 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#5 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\app\Controllers\ProductController.php(21): CodeIgniter\BaseModel->findAll()
+#6 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\CodeIgniter.php(942): App\Controllers\ProductController->index()
+#7 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+#8 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\Commands\Server\rewrite.php(47): require_once('E:\\xamp\\htdocs\\...')
+#11 {main}
+ERROR - 2023-12-05 03:25:18 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it.
+ in E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\Database\MySQLi\Connection.php:185
+Stack trace:
+#0 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\Database\MySQLi\Connection.php(185): mysqli->real_connect('localhost', 'root', '', 'codegnitore_pro...', 3306, '', 0)
+#1 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\Database\BaseConnection.php(690): CodeIgniter\Database\BaseConnection->initialize()
+#3 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#4 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#5 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#6 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#7 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\app\Controllers\ProductController.php(21): CodeIgniter\BaseModel->findAll()
+#8 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\CodeIgniter.php(942): App\Controllers\ProductController->index()
+#9 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+#10 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\Commands\Server\rewrite.php(47): require_once('E:\\xamp\\htdocs\\...')
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it.
+ in E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\Database\BaseConnection.php(690): CodeIgniter\Database\BaseConnection->initialize()
+#2 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\app\Controllers\ProductController.php(21): CodeIgniter\BaseModel->findAll()
+#7 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\CodeIgniter.php(942): App\Controllers\ProductController->index()
+#8 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+#9 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\Commands\Server\rewrite.php(47): require_once('E:\\xamp\\htdocs\\...')
+#12 {main}
+CRITICAL - 2023-12-05 03:25:18 --> Call to a member function more_results() on bool
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 298.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `products`')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `products`')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `products`', [], false)
+ 4 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Controllers\ProductController.php(21): CodeIgniter\BaseModel->findAll()
+ 7 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ProductController->index()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xamp\\htdocs\\wdpf55_codegitore\\CI_PROJECT1\\public\\index.php')
+ERROR - 2023-12-05 03:25:23 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it.
+ in E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\Database\MySQLi\Connection.php:185
+Stack trace:
+#0 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\Database\MySQLi\Connection.php(185): mysqli->real_connect('localhost', 'root', '', 'codegnitore_pro...', 3306, '', 0)
+#1 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\app\Controllers\ProductController.php(21): CodeIgniter\BaseModel->findAll()
+#7 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\CodeIgniter.php(942): App\Controllers\ProductController->index()
+#8 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+#9 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\Commands\Server\rewrite.php(47): require_once('E:\\xamp\\htdocs\\...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it.
+ in E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#4 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#5 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\app\Controllers\ProductController.php(21): CodeIgniter\BaseModel->findAll()
+#6 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\CodeIgniter.php(942): App\Controllers\ProductController->index()
+#7 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+#8 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\Commands\Server\rewrite.php(47): require_once('E:\\xamp\\htdocs\\...')
+#11 {main}
+CRITICAL - 2023-12-05 03:25:23 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it.
+
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `products`', [], false)
+ 3 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\ProductController.php(21): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ProductController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xamp\\htdocs\\wdpf55_codegitore\\CI_PROJECT1\\public\\index.php')
+ERROR - 2023-12-05 03:25:39 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it.
+ in E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\Database\MySQLi\Connection.php:185
+Stack trace:
+#0 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\Database\MySQLi\Connection.php(185): mysqli->real_connect('localhost', 'root', '', 'codegnitore_pro...', 3306, '', 0)
+#1 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\app\Controllers\ProductController.php(21): CodeIgniter\BaseModel->findAll()
+#7 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\CodeIgniter.php(942): App\Controllers\ProductController->index()
+#8 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+#9 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\Commands\Server\rewrite.php(47): require_once('E:\\xamp\\htdocs\\...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it.
+ in E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#4 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#5 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\app\Controllers\ProductController.php(21): CodeIgniter\BaseModel->findAll()
+#6 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\CodeIgniter.php(942): App\Controllers\ProductController->index()
+#7 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+#8 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\Commands\Server\rewrite.php(47): require_once('E:\\xamp\\htdocs\\...')
+#11 {main}
+CRITICAL - 2023-12-05 03:25:39 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it.
+
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `products`', [], false)
+ 3 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\ProductController.php(21): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ProductController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xamp\\htdocs\\wdpf55_codegitore\\CI_PROJECT1\\public\\index.php')
+ERROR - 2023-12-05 03:25:41 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it.
+ in E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\Database\MySQLi\Connection.php:185
+Stack trace:
+#0 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\Database\MySQLi\Connection.php(185): mysqli->real_connect('localhost', 'root', '', 'codegnitore_pro...', 3306, '', 0)
+#1 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\app\Controllers\ProductController.php(21): CodeIgniter\BaseModel->findAll()
+#7 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\CodeIgniter.php(942): App\Controllers\ProductController->index()
+#8 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+#9 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\Commands\Server\rewrite.php(47): require_once('E:\\xamp\\htdocs\\...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it.
+ in E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#4 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#5 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\app\Controllers\ProductController.php(21): CodeIgniter\BaseModel->findAll()
+#6 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\CodeIgniter.php(942): App\Controllers\ProductController->index()
+#7 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+#8 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\Commands\Server\rewrite.php(47): require_once('E:\\xamp\\htdocs\\...')
+#11 {main}
+CRITICAL - 2023-12-05 03:25:41 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it.
+
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `products`', [], false)
+ 3 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\ProductController.php(21): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ProductController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xamp\\htdocs\\wdpf55_codegitore\\CI_PROJECT1\\public\\index.php')
+ERROR - 2023-12-05 03:25:43 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it.
+ in E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\Database\MySQLi\Connection.php:185
+Stack trace:
+#0 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\Database\MySQLi\Connection.php(185): mysqli->real_connect('localhost', 'root', '', 'codegnitore_pro...', 3306, '', 0)
+#1 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\app\Controllers\ProductController.php(21): CodeIgniter\BaseModel->findAll()
+#7 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\CodeIgniter.php(942): App\Controllers\ProductController->index()
+#8 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+#9 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\Commands\Server\rewrite.php(47): require_once('E:\\xamp\\htdocs\\...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it.
+ in E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#4 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#5 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\app\Controllers\ProductController.php(21): CodeIgniter\BaseModel->findAll()
+#6 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\CodeIgniter.php(942): App\Controllers\ProductController->index()
+#7 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+#8 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\Commands\Server\rewrite.php(47): require_once('E:\\xamp\\htdocs\\...')
+#11 {main}
+CRITICAL - 2023-12-05 03:25:43 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it.
+
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `products`', [], false)
+ 3 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\ProductController.php(21): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ProductController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xamp\\htdocs\\wdpf55_codegitore\\CI_PROJECT1\\public\\index.php')
+ERROR - 2023-12-05 03:25:46 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it.
+ in E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\Database\MySQLi\Connection.php:185
+Stack trace:
+#0 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\Database\MySQLi\Connection.php(185): mysqli->real_connect('localhost', 'root', '', 'codegnitore_pro...', 3306, '', 0)
+#1 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\app\Controllers\ProductController.php(21): CodeIgniter\BaseModel->findAll()
+#7 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\CodeIgniter.php(942): App\Controllers\ProductController->index()
+#8 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+#9 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\Commands\Server\rewrite.php(47): require_once('E:\\xamp\\htdocs\\...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it.
+ in E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#4 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#5 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\app\Controllers\ProductController.php(21): CodeIgniter\BaseModel->findAll()
+#6 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\CodeIgniter.php(942): App\Controllers\ProductController->index()
+#7 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+#8 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\Commands\Server\rewrite.php(47): require_once('E:\\xamp\\htdocs\\...')
+#11 {main}
+CRITICAL - 2023-12-05 03:25:46 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it.
+
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `products`', [], false)
+ 3 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\ProductController.php(21): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ProductController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xamp\\htdocs\\wdpf55_codegitore\\CI_PROJECT1\\public\\index.php')
+ERROR - 2023-12-05 03:25:48 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it.
+ in E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\Database\MySQLi\Connection.php:185
+Stack trace:
+#0 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\Database\MySQLi\Connection.php(185): mysqli->real_connect('localhost', 'root', '', 'codegnitore_pro...', 3306, '', 0)
+#1 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\app\Controllers\ProductController.php(21): CodeIgniter\BaseModel->findAll()
+#7 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\CodeIgniter.php(942): App\Controllers\ProductController->index()
+#8 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+#9 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\Commands\Server\rewrite.php(47): require_once('E:\\xamp\\htdocs\\...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it.
+ in E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#4 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#5 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\app\Controllers\ProductController.php(21): CodeIgniter\BaseModel->findAll()
+#6 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\CodeIgniter.php(942): App\Controllers\ProductController->index()
+#7 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+#8 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\Commands\Server\rewrite.php(47): require_once('E:\\xamp\\htdocs\\...')
+#11 {main}
+CRITICAL - 2023-12-05 03:25:48 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it.
+
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `products`', [], false)
+ 3 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\ProductController.php(21): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ProductController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xamp\\htdocs\\wdpf55_codegitore\\CI_PROJECT1\\public\\index.php')
+ERROR - 2023-12-05 03:25:50 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it.
+ in E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\Database\MySQLi\Connection.php:185
+Stack trace:
+#0 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\Database\MySQLi\Connection.php(185): mysqli->real_connect('localhost', 'root', '', 'codegnitore_pro...', 3306, '', 0)
+#1 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\app\Controllers\ProductController.php(21): CodeIgniter\BaseModel->findAll()
+#7 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\CodeIgniter.php(942): App\Controllers\ProductController->index()
+#8 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+#9 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\Commands\Server\rewrite.php(47): require_once('E:\\xamp\\htdocs\\...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it.
+ in E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#4 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#5 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\app\Controllers\ProductController.php(21): CodeIgniter\BaseModel->findAll()
+#6 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\CodeIgniter.php(942): App\Controllers\ProductController->index()
+#7 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+#8 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\Commands\Server\rewrite.php(47): require_once('E:\\xamp\\htdocs\\...')
+#11 {main}
+CRITICAL - 2023-12-05 03:25:50 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it.
+
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `products`', [], false)
+ 3 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\ProductController.php(21): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ProductController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xamp\\htdocs\\wdpf55_codegitore\\CI_PROJECT1\\public\\index.php')
+ERROR - 2023-12-05 03:25:52 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it.
+ in E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\Database\MySQLi\Connection.php:185
+Stack trace:
+#0 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\Database\MySQLi\Connection.php(185): mysqli->real_connect('localhost', 'root', '', 'codegnitore_pro...', 3306, '', 0)
+#1 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\app\Controllers\ProductController.php(21): CodeIgniter\BaseModel->findAll()
+#7 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\CodeIgniter.php(942): App\Controllers\ProductController->index()
+#8 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+#9 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\Commands\Server\rewrite.php(47): require_once('E:\\xamp\\htdocs\\...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it.
+ in E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#4 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#5 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\app\Controllers\ProductController.php(21): CodeIgniter\BaseModel->findAll()
+#6 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\CodeIgniter.php(942): App\Controllers\ProductController->index()
+#7 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+#8 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\Commands\Server\rewrite.php(47): require_once('E:\\xamp\\htdocs\\...')
+#11 {main}
+CRITICAL - 2023-12-05 03:25:52 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it.
+
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `products`', [], false)
+ 3 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\ProductController.php(21): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ProductController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xamp\\htdocs\\wdpf55_codegitore\\CI_PROJECT1\\public\\index.php')
+ERROR - 2023-12-05 03:25:54 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it.
+ in E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\Database\MySQLi\Connection.php:185
+Stack trace:
+#0 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\Database\MySQLi\Connection.php(185): mysqli->real_connect('localhost', 'root', '', 'codegnitore_pro...', 3306, '', 0)
+#1 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\app\Controllers\ProductController.php(21): CodeIgniter\BaseModel->findAll()
+#7 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\CodeIgniter.php(942): App\Controllers\ProductController->index()
+#8 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+#9 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\Commands\Server\rewrite.php(47): require_once('E:\\xamp\\htdocs\\...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it.
+ in E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#4 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#5 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\app\Controllers\ProductController.php(21): CodeIgniter\BaseModel->findAll()
+#6 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\CodeIgniter.php(942): App\Controllers\ProductController->index()
+#7 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+#8 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\Commands\Server\rewrite.php(47): require_once('E:\\xamp\\htdocs\\...')
+#11 {main}
+CRITICAL - 2023-12-05 03:25:54 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it.
+
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `products`', [], false)
+ 3 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\ProductController.php(21): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ProductController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xamp\\htdocs\\wdpf55_codegitore\\CI_PROJECT1\\public\\index.php')
+ERROR - 2023-12-05 03:25:57 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it.
+ in E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\Database\MySQLi\Connection.php:185
+Stack trace:
+#0 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\Database\MySQLi\Connection.php(185): mysqli->real_connect('localhost', 'root', '', 'codegnitore_pro...', 3306, '', 0)
+#1 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\app\Controllers\ProductController.php(21): CodeIgniter\BaseModel->findAll()
+#7 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\CodeIgniter.php(942): App\Controllers\ProductController->index()
+#8 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+#9 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\Commands\Server\rewrite.php(47): require_once('E:\\xamp\\htdocs\\...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it.
+ in E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#4 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#5 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\app\Controllers\ProductController.php(21): CodeIgniter\BaseModel->findAll()
+#6 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\CodeIgniter.php(942): App\Controllers\ProductController->index()
+#7 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+#8 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\Commands\Server\rewrite.php(47): require_once('E:\\xamp\\htdocs\\...')
+#11 {main}
+CRITICAL - 2023-12-05 03:25:57 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it.
+
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `products`', [], false)
+ 3 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\ProductController.php(21): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ProductController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xamp\\htdocs\\wdpf55_codegitore\\CI_PROJECT1\\public\\index.php')
+ERROR - 2023-12-05 03:26:47 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it.
+ in E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\Database\MySQLi\Connection.php:185
+Stack trace:
+#0 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\Database\MySQLi\Connection.php(185): mysqli->real_connect('localhost', 'root', '', 'codegnitore_pro...', 3306, '', 0)
+#1 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\app\Controllers\ProductController.php(21): CodeIgniter\BaseModel->findAll()
+#7 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\CodeIgniter.php(942): App\Controllers\ProductController->index()
+#8 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+#9 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\Commands\Server\rewrite.php(47): require_once('E:\\xamp\\htdocs\\...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it.
+ in E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#4 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#5 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\app\Controllers\ProductController.php(21): CodeIgniter\BaseModel->findAll()
+#6 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\CodeIgniter.php(942): App\Controllers\ProductController->index()
+#7 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+#8 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\Commands\Server\rewrite.php(47): require_once('E:\\xamp\\htdocs\\...')
+#11 {main}
+CRITICAL - 2023-12-05 03:26:47 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it.
+
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `products`', [], false)
+ 3 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\ProductController.php(21): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ProductController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xamp\\htdocs\\wdpf55_codegitore\\CI_PROJECT1\\public\\index.php')
+INFO - 2023-12-05 03:27:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-05 03:31:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-05 03:32:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-05 03:37:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-05 03:44:49 --> syntax error, unexpected '}'
+in APPPATH\Controllers\ProductController.php on line 59.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(291): CodeIgniter\Autoloader\Autoloader->includeFile('E:\\xamp\\htdocs\\wdpf55_codegitore\\CI_PROJECT1\\app\\Controllers\\ProductController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(269): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\ProductController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\ProductController')
+ 4 [internal function]: spl_autoload_call('App\\Controllers\\ProductController')
+ 5 SYSTEMPATH\CodeIgniter.php(900): class_exists('\\App\\Controllers\\ProductController', true)
+ 6 SYSTEMPATH\CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xamp\\htdocs\\wdpf55_codegitore\\CI_PROJECT1\\public\\index.php')
+INFO - 2023-12-05 03:58:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-05 03:58:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-05 03:58:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-05 04:00:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-05 04:00:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-05 04:00:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-05 04:00:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-05 04:00:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-05 04:00:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-05 04:02:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-05 04:02:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-05 04:02:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-05 04:02:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-05 04:02:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-05 04:04:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-05 04:04:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-05 04:04:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-05 04:04:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-05 04:04:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-05 04:24:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-05 04:29:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-05 04:40:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-05 04:40:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-05 04:41:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-05 04:55:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-05 04:57:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-05 05:00:09 --> fopen(http://localhost:8080/E:%5Cxamp%5Chtdocs%5Cwdpf55_codegitore%5CCI_PROJECT1%5Cwritable%5Cuploads/index.html): failed to open stream: HTTP wrapper does not support writeable connections
+in SYSTEMPATH\HTTP\Files\UploadedFile.php on line 188.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fopen(http://localhost:8080/E:%5Cxamp%5Chtdocs%5Cwdpf55_codegitore%5CCI_PROJECT1%5Cwritable%5Cuploads/index.html): failed to open stream: HTTP wrapper does not support writeable connections', 'E:\\xamp\\htdocs\\wdpf55_codegitore\\CI_PROJECT1\\system\\HTTP\\Files\\UploadedFile.php', 188, [...])
+ 2 SYSTEMPATH\HTTP\Files\UploadedFile.php(188): fopen('http://localhost:8080/E:%5Cxamp%5Chtdocs%5Cwdpf55_codegitore%5CCI_PROJECT1%5Cwritable%5Cuploads/index.html', 'x+b')
+ 3 SYSTEMPATH\HTTP\Files\UploadedFile.php(139): CodeIgniter\HTTP\Files\UploadedFile->setPath('http://localhost:8080/E:%5Cxamp%5Chtdocs%5Cwdpf55_codegitore%5CCI_PROJECT1%5Cwritable%5Cuploads/')
+ 4 APPPATH\Controllers\ProductController.php(54): CodeIgniter\HTTP\Files\UploadedFile->move('http://localhost:8080/E:%5Cxamp%5Chtdocs%5Cwdpf55_codegitore%5CCI_PROJECT1%5Cwritable%5Cuploads/')
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ProductController->store()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xamp\\htdocs\\wdpf55_codegitore\\CI_PROJECT1\\public\\index.php')
+CRITICAL - 2023-12-05 05:04:07 --> " max_size" is not a valid rule.
+in SYSTEMPATH\Validation\Validation.php on line 319.
+ 1 SYSTEMPATH\Validation\Validation.php(319): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound(' max_size')
+ 2 SYSTEMPATH\Validation\Validation.php(197): CodeIgniter\Validation\Validation->processRules('photo', 'photo', null, [...], [...])
+ 3 SYSTEMPATH\Controller.php(152): CodeIgniter\Validation\Validation->run()
+ 4 APPPATH\Controllers\ProductController.php(50): CodeIgniter\Controller->validate([...])
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ProductController->store()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xamp\\htdocs\\wdpf55_codegitore\\CI_PROJECT1\\public\\index.php')
+CRITICAL - 2023-12-05 05:04:42 --> " max_size" is not a valid rule.
+in SYSTEMPATH\Validation\Validation.php on line 319.
+ 1 SYSTEMPATH\Validation\Validation.php(319): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound(' max_size')
+ 2 SYSTEMPATH\Validation\Validation.php(197): CodeIgniter\Validation\Validation->processRules('photo', 'photo', null, [...], [...])
+ 3 SYSTEMPATH\Controller.php(152): CodeIgniter\Validation\Validation->run()
+ 4 APPPATH\Controllers\ProductController.php(50): CodeIgniter\Controller->validate([...])
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ProductController->store()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xamp\\htdocs\\wdpf55_codegitore\\CI_PROJECT1\\public\\index.php')
+CRITICAL - 2023-12-05 05:04:45 --> " max_size" is not a valid rule.
+in SYSTEMPATH\Validation\Validation.php on line 319.
+ 1 SYSTEMPATH\Validation\Validation.php(319): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound(' max_size')
+ 2 SYSTEMPATH\Validation\Validation.php(197): CodeIgniter\Validation\Validation->processRules('photo', 'photo', null, [...], [...])
+ 3 SYSTEMPATH\Controller.php(152): CodeIgniter\Validation\Validation->run()
+ 4 APPPATH\Controllers\ProductController.php(50): CodeIgniter\Controller->validate([...])
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ProductController->store()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xamp\\htdocs\\wdpf55_codegitore\\CI_PROJECT1\\public\\index.php')
+CRITICAL - 2023-12-05 05:06:11 --> " max_size" is not a valid rule.
+in SYSTEMPATH\Validation\Validation.php on line 319.
+ 1 SYSTEMPATH\Validation\Validation.php(319): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound(' max_size')
+ 2 SYSTEMPATH\Validation\Validation.php(197): CodeIgniter\Validation\Validation->processRules('photo', 'photo', null, [...], [...])
+ 3 SYSTEMPATH\Controller.php(152): CodeIgniter\Validation\Validation->run()
+ 4 APPPATH\Controllers\ProductController.php(50): CodeIgniter\Controller->validate([...])
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ProductController->store()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xamp\\htdocs\\wdpf55_codegitore\\CI_PROJECT1\\public\\index.php')
+CRITICAL - 2023-12-05 05:06:36 --> " max_size" is not a valid rule.
+in SYSTEMPATH\Validation\Validation.php on line 319.
+ 1 SYSTEMPATH\Validation\Validation.php(319): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound(' max_size')
+ 2 SYSTEMPATH\Validation\Validation.php(197): CodeIgniter\Validation\Validation->processRules('photo', 'photo', null, [...], [...])
+ 3 SYSTEMPATH\Controller.php(152): CodeIgniter\Validation\Validation->run()
+ 4 APPPATH\Controllers\ProductController.php(50): CodeIgniter\Controller->validate([...])
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ProductController->store()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xamp\\htdocs\\wdpf55_codegitore\\CI_PROJECT1\\public\\index.php')
+INFO - 2023-12-05 05:07:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-05 05:08:10 --> fopen(http://localhost:8080/E:%5Cxamp%5Chtdocs%5Cwdpf55_codegitore%5CCI_PROJECT1%5Cwritable%5Cuploads/index.html): failed to open stream: HTTP wrapper does not support writeable connections
+in SYSTEMPATH\HTTP\Files\UploadedFile.php on line 188.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fopen(http://localhost:8080/E:%5Cxamp%5Chtdocs%5Cwdpf55_codegitore%5CCI_PROJECT1%5Cwritable%5Cuploads/index.html): failed to open stream: HTTP wrapper does not support writeable connections', 'E:\\xamp\\htdocs\\wdpf55_codegitore\\CI_PROJECT1\\system\\HTTP\\Files\\UploadedFile.php', 188, [...])
+ 2 SYSTEMPATH\HTTP\Files\UploadedFile.php(188): fopen('http://localhost:8080/E:%5Cxamp%5Chtdocs%5Cwdpf55_codegitore%5CCI_PROJECT1%5Cwritable%5Cuploads/index.html', 'x+b')
+ 3 SYSTEMPATH\HTTP\Files\UploadedFile.php(139): CodeIgniter\HTTP\Files\UploadedFile->setPath('http://localhost:8080/E:%5Cxamp%5Chtdocs%5Cwdpf55_codegitore%5CCI_PROJECT1%5Cwritable%5Cuploads/')
+ 4 APPPATH\Controllers\ProductController.php(55): CodeIgniter\HTTP\Files\UploadedFile->move('http://localhost:8080/E:%5Cxamp%5Chtdocs%5Cwdpf55_codegitore%5CCI_PROJECT1%5Cwritable%5Cuploads/')
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ProductController->store()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xamp\\htdocs\\wdpf55_codegitore\\CI_PROJECT1\\public\\index.php')
+INFO - 2023-12-05 05:13:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-05 05:13:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-05 05:14:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-05 05:14:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-05 05:17:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-05 05:17:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

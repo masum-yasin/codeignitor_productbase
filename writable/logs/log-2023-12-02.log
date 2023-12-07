@@ -1,0 +1,348 @@
+CRITICAL - 2023-12-02 04:13:26 --> Invalid file: "includes/sidebar.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('includes/sidebar.php')
+ 2 SYSTEMPATH\View\View.php(469): CodeIgniter\View\View->render('includes/sidebar', null, true)
+ 3 APPPATH\Views\dashboard.php(32): CodeIgniter\View\View->include('includes/sidebar')
+ 4 SYSTEMPATH\View\View.php(228): include('E:\\xamp\\htdocs\\wdpf55_codegitore\\CI_PROJECT1\\app\\Views\\dashboard.php')
+ 5 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('dashboard', [], true)
+ 7 APPPATH\Controllers\AdminHome.php(11): view('dashboard')
+ 8 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AdminHome->index()
+ 9 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminHome))
+10 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xamp\\htdocs\\wdpf55_codegitore\\CI_PROJECT1\\public\\index.php')
+CRITICAL - 2023-12-02 04:37:01 --> syntax error, unexpected '}', expecting ';'
+in APPPATH\Controllers\ProductController.php on line 12.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(291): CodeIgniter\Autoloader\Autoloader->includeFile('E:\\xamp\\htdocs\\wdpf55_codegitore\\CI_PROJECT1\\app\\Controllers\\ProductController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(269): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\ProductController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\ProductController')
+ 4 [internal function]: spl_autoload_call('App\\Controllers\\ProductController')
+ 5 SYSTEMPATH\CodeIgniter.php(900): class_exists('\\App\\Controllers\\ProductController', true)
+ 6 SYSTEMPATH\CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xamp\\htdocs\\wdpf55_codegitore\\CI_PROJECT1\\public\\index.php')
+CRITICAL - 2023-12-02 04:38:37 --> Invalid file: "products/index.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('products/index.php')
+ 2 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('products/index', [], true)
+ 3 APPPATH\Controllers\ProductController.php(11): view('products/index')
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ProductController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xamp\\htdocs\\wdpf55_codegitore\\CI_PROJECT1\\public\\index.php')
+CRITICAL - 2023-12-02 06:07:58 --> Call to undefined method App\Models\ProductModel::getAll
+in SYSTEMPATH\Model.php on line 873.
+ 1 APPPATH\Controllers\ProductController.php(21): CodeIgniter\Model->__call('getAll', [])
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ProductController->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xamp\\htdocs\\wdpf55_codegitore\\CI_PROJECT1\\public\\index.php')
+ERROR - 2023-12-02 06:09:06 --> Error connecting to the database: mysqli_sql_exception: Access denied for user ''@'localhost' (using password: NO) in E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\Database\MySQLi\Connection.php:185
+Stack trace:
+#0 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\Database\MySQLi\Connection.php(185): mysqli->real_connect('localhost', '', '', '', 3306, '', 0)
+#1 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\Model.php(871): CodeIgniter\Database\BaseBuilder->get()
+#5 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\app\Controllers\ProductController.php(21): CodeIgniter\Model->__call('get', Array)
+#6 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\CodeIgniter.php(942): App\Controllers\ProductController->index()
+#7 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+#8 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\Commands\Server\rewrite.php(47): require_once('E:\\xamp\\htdocs\\...')
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user ''@'localhost' (using password: NO) in E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\Model.php(871): CodeIgniter\Database\BaseBuilder->get()
+#4 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\app\Controllers\ProductController.php(21): CodeIgniter\Model->__call('get', Array)
+#5 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\CodeIgniter.php(942): App\Controllers\ProductController->index()
+#6 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+#7 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\Commands\Server\rewrite.php(47): require_once('E:\\xamp\\htdocs\\...')
+#10 {main}
+CRITICAL - 2023-12-02 06:09:06 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user ''@'localhost' (using password: NO)
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `products`', [], false)
+ 3 SYSTEMPATH\Model.php(871): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH\Controllers\ProductController.php(21): CodeIgniter\Model->__call('get', [])
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ProductController->index()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xamp\\htdocs\\wdpf55_codegitore\\CI_PROJECT1\\public\\index.php')
+ERROR - 2023-12-02 06:11:03 --> Error connecting to the database: mysqli_sql_exception: Access denied for user ''@'localhost' (using password: NO) in E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\Database\MySQLi\Connection.php:185
+Stack trace:
+#0 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\Database\MySQLi\Connection.php(185): mysqli->real_connect('localhost', '', '', '', 3306, '', 0)
+#1 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\app\Controllers\ProductController.php(21): CodeIgniter\BaseModel->findAll()
+#7 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\CodeIgniter.php(942): App\Controllers\ProductController->index()
+#8 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+#9 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\Commands\Server\rewrite.php(47): require_once('E:\\xamp\\htdocs\\...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user ''@'localhost' (using password: NO) in E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#4 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#5 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\app\Controllers\ProductController.php(21): CodeIgniter\BaseModel->findAll()
+#6 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\CodeIgniter.php(942): App\Controllers\ProductController->index()
+#7 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+#8 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\Commands\Server\rewrite.php(47): require_once('E:\\xamp\\htdocs\\...')
+#11 {main}
+CRITICAL - 2023-12-02 06:11:03 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user ''@'localhost' (using password: NO)
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `products`', [], false)
+ 3 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\ProductController.php(21): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ProductController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xamp\\htdocs\\wdpf55_codegitore\\CI_PROJECT1\\public\\index.php')
+ERROR - 2023-12-02 06:11:04 --> Error connecting to the database: mysqli_sql_exception: Access denied for user ''@'localhost' (using password: NO) in E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\Database\MySQLi\Connection.php:185
+Stack trace:
+#0 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\Database\MySQLi\Connection.php(185): mysqli->real_connect('localhost', '', '', '', 3306, '', 0)
+#1 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\app\Controllers\ProductController.php(21): CodeIgniter\BaseModel->findAll()
+#7 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\CodeIgniter.php(942): App\Controllers\ProductController->index()
+#8 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+#9 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\Commands\Server\rewrite.php(47): require_once('E:\\xamp\\htdocs\\...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user ''@'localhost' (using password: NO) in E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#4 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#5 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\app\Controllers\ProductController.php(21): CodeIgniter\BaseModel->findAll()
+#6 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\CodeIgniter.php(942): App\Controllers\ProductController->index()
+#7 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+#8 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\Commands\Server\rewrite.php(47): require_once('E:\\xamp\\htdocs\\...')
+#11 {main}
+CRITICAL - 2023-12-02 06:11:04 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user ''@'localhost' (using password: NO)
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `products`', [], false)
+ 3 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\ProductController.php(21): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ProductController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xamp\\htdocs\\wdpf55_codegitore\\CI_PROJECT1\\public\\index.php')
+ERROR - 2023-12-02 06:11:05 --> Error connecting to the database: mysqli_sql_exception: Access denied for user ''@'localhost' (using password: NO) in E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\Database\MySQLi\Connection.php:185
+Stack trace:
+#0 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\Database\MySQLi\Connection.php(185): mysqli->real_connect('localhost', '', '', '', 3306, '', 0)
+#1 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\app\Controllers\ProductController.php(21): CodeIgniter\BaseModel->findAll()
+#7 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\CodeIgniter.php(942): App\Controllers\ProductController->index()
+#8 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+#9 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\Commands\Server\rewrite.php(47): require_once('E:\\xamp\\htdocs\\...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user ''@'localhost' (using password: NO) in E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#4 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#5 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\app\Controllers\ProductController.php(21): CodeIgniter\BaseModel->findAll()
+#6 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\CodeIgniter.php(942): App\Controllers\ProductController->index()
+#7 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+#8 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\Commands\Server\rewrite.php(47): require_once('E:\\xamp\\htdocs\\...')
+#11 {main}
+CRITICAL - 2023-12-02 06:11:05 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user ''@'localhost' (using password: NO)
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `products`', [], false)
+ 3 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\ProductController.php(21): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ProductController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xamp\\htdocs\\wdpf55_codegitore\\CI_PROJECT1\\public\\index.php')
+ERROR - 2023-12-02 06:11:05 --> Error connecting to the database: mysqli_sql_exception: Access denied for user ''@'localhost' (using password: NO) in E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\Database\MySQLi\Connection.php:185
+Stack trace:
+#0 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\Database\MySQLi\Connection.php(185): mysqli->real_connect('localhost', '', '', '', 3306, '', 0)
+#1 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\app\Controllers\ProductController.php(21): CodeIgniter\BaseModel->findAll()
+#7 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\CodeIgniter.php(942): App\Controllers\ProductController->index()
+#8 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+#9 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\Commands\Server\rewrite.php(47): require_once('E:\\xamp\\htdocs\\...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user ''@'localhost' (using password: NO) in E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#4 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#5 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\app\Controllers\ProductController.php(21): CodeIgniter\BaseModel->findAll()
+#6 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\CodeIgniter.php(942): App\Controllers\ProductController->index()
+#7 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+#8 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\Commands\Server\rewrite.php(47): require_once('E:\\xamp\\htdocs\\...')
+#11 {main}
+CRITICAL - 2023-12-02 06:11:05 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user ''@'localhost' (using password: NO)
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `products`', [], false)
+ 3 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\ProductController.php(21): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ProductController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xamp\\htdocs\\wdpf55_codegitore\\CI_PROJECT1\\public\\index.php')
+ERROR - 2023-12-02 06:11:57 --> Error connecting to the database: mysqli_sql_exception: Access denied for user ''@'localhost' (using password: NO) in E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\Database\MySQLi\Connection.php:185
+Stack trace:
+#0 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\Database\MySQLi\Connection.php(185): mysqli->real_connect('localhost', '', '', '', 3306, '', 0)
+#1 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\app\Controllers\ProductController.php(21): CodeIgniter\BaseModel->findAll()
+#7 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\CodeIgniter.php(942): App\Controllers\ProductController->index()
+#8 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+#9 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\Commands\Server\rewrite.php(47): require_once('E:\\xamp\\htdocs\\...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user ''@'localhost' (using password: NO) in E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#4 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#5 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\app\Controllers\ProductController.php(21): CodeIgniter\BaseModel->findAll()
+#6 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\CodeIgniter.php(942): App\Controllers\ProductController->index()
+#7 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+#8 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\Commands\Server\rewrite.php(47): require_once('E:\\xamp\\htdocs\\...')
+#11 {main}
+CRITICAL - 2023-12-02 06:11:57 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user ''@'localhost' (using password: NO)
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `products`', [], false)
+ 3 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\ProductController.php(21): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ProductController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xamp\\htdocs\\wdpf55_codegitore\\CI_PROJECT1\\public\\index.php')
+ERROR - 2023-12-02 06:11:59 --> Error connecting to the database: mysqli_sql_exception: Access denied for user ''@'localhost' (using password: NO) in E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\Database\MySQLi\Connection.php:185
+Stack trace:
+#0 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\Database\MySQLi\Connection.php(185): mysqli->real_connect('localhost', '', '', '', 3306, '', 0)
+#1 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\app\Controllers\ProductController.php(21): CodeIgniter\BaseModel->findAll()
+#7 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\CodeIgniter.php(942): App\Controllers\ProductController->index()
+#8 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+#9 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\Commands\Server\rewrite.php(47): require_once('E:\\xamp\\htdocs\\...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user ''@'localhost' (using password: NO) in E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#4 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#5 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\app\Controllers\ProductController.php(21): CodeIgniter\BaseModel->findAll()
+#6 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\CodeIgniter.php(942): App\Controllers\ProductController->index()
+#7 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+#8 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 E:\xamp\htdocs\wdpf55_codegitore\CI_PROJECT1\system\Commands\Server\rewrite.php(47): require_once('E:\\xamp\\htdocs\\...')
+#11 {main}
+CRITICAL - 2023-12-02 06:11:59 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user ''@'localhost' (using password: NO)
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `products`', [], false)
+ 3 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\ProductController.php(21): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ProductController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xamp\\htdocs\\wdpf55_codegitore\\CI_PROJECT1\\public\\index.php')

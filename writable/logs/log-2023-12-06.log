@@ -1,0 +1,105 @@
+INFO - 2023-12-06 03:28:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-06 04:30:21 --> syntax error, unexpected end of file
+in APPPATH\Config\Routes.php on line 18.
+ 1 SYSTEMPATH\CLI\Console.php(39): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 2 ROOTPATH\spark(102): CodeIgniter\CLI\Console->run()
+CRITICAL - 2023-12-06 04:30:56 --> syntax error, unexpected end of file
+in APPPATH\Config\Routes.php on line 18.
+ 1 SYSTEMPATH\CLI\Console.php(39): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 2 ROOTPATH\spark(102): CodeIgniter\CLI\Console->run()
+INFO - 2023-12-06 04:31:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-06 04:31:55 --> Invalid file: "signup.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('signup.php')
+ 2 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('signup', [], true)
+ 3 APPPATH\Controllers\SingupController.php(15): view('signup')
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\SingupController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SingupController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xamp\\htdocs\\wdpf55_codegitore\\CI_PROJECT1\\public\\index.php')
+CRITICAL - 2023-12-06 04:32:32 --> Invalid file: "signup.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('signup.php')
+ 2 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('signup', [], true)
+ 3 APPPATH\Controllers\SingupController.php(15): view('signup')
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\SingupController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SingupController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xamp\\htdocs\\wdpf55_codegitore\\CI_PROJECT1\\public\\index.php')
+CRITICAL - 2023-12-06 04:32:36 --> Invalid file: "signup.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('signup.php')
+ 2 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('signup', [], true)
+ 3 APPPATH\Controllers\SingupController.php(15): view('signup')
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\SingupController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SingupController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xamp\\htdocs\\wdpf55_codegitore\\CI_PROJECT1\\public\\index.php')
+CRITICAL - 2023-12-06 04:33:31 --> Invalid file: "signup.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('signup.php')
+ 2 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('signup', [], true)
+ 3 APPPATH\Controllers\SingupController.php(15): view('signup')
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\SingupController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SingupController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xamp\\htdocs\\wdpf55_codegitore\\CI_PROJECT1\\public\\index.php')
+CRITICAL - 2023-12-06 04:34:43 --> Invalid file: "signup.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('signup.php')
+ 2 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('signup', [], true)
+ 3 APPPATH\Controllers\SingupController.php(15): view('signup')
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\SingupController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SingupController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xamp\\htdocs\\wdpf55_codegitore\\CI_PROJECT1\\public\\index.php')
+CRITICAL - 2023-12-06 04:35:26 --> Invalid file: "signup.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('signup.php')
+ 2 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('signup', [], true)
+ 3 APPPATH\Controllers\SingupController.php(15): view('signup')
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\SingupController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SingupController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xamp\\htdocs\\wdpf55_codegitore\\CI_PROJECT1\\public\\index.php')
+CRITICAL - 2023-12-06 04:35:50 --> Invalid file: "signup.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('signup.php')
+ 2 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('signup', [], true)
+ 3 APPPATH\Controllers\SingupController.php(15): view('signup')
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\SingupController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SingupController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xamp\\htdocs\\wdpf55_codegitore\\CI_PROJECT1\\public\\index.php')
+CRITICAL - 2023-12-06 04:36:11 --> Invalid file: "signup.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('signup.php')
+ 2 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('signup', [], true)
+ 3 APPPATH\Controllers\SingupController.php(15): view('signup', [])
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\SingupController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SingupController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xamp\\htdocs\\wdpf55_codegitore\\CI_PROJECT1\\public\\index.php')
+CRITICAL - 2023-12-06 04:36:15 --> Invalid file: "signup.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('signup.php')
+ 2 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('signup', [], true)
+ 3 APPPATH\Controllers\SingupController.php(15): view('signup', [])
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\SingupController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SingupController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xamp\\htdocs\\wdpf55_codegitore\\CI_PROJECT1\\public\\index.php')
+INFO - 2023-12-06 05:17:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-06 05:24:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-06 05:27:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-06 05:29:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-06 05:36:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
